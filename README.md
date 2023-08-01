@@ -54,7 +54,7 @@ Classes inherited from Base Model:
 * [state.py](/models/state.py)
 * [user.py](/models/user.py)
 
-#### `/models/engine` directory contains File Storage class that handles JASON serialization and deserialization :
+#### `/models/engine` directory contains the File Storage class that handles JASON serialization and deserialization :
 [file_storage.py](/models/engine/file_storage.py) - serializes instances to a JSON file & deserializes back to instances
 * `def all(self)` - returns the dictionary __objects
 * `def new(self, obj)` - sets in __objects the obj with key <obj class name>.id
@@ -72,10 +72,10 @@ TestBaseModelDocs class:
 * `def test_bm_func_docstrings(self)` - Test for the presence of docstrings in BaseModel methods
 
 TestBaseModel class:
-* `def test_is_base_model(self)` - Test that the instatiation of a BaseModel works
-* `def test_created_at_instantiation(self)` - Test created_at is a pub. instance attribute of type datetime
-* `def test_updated_at_instantiation(self)` - Test updated_at is a pub. instance attribute of type datetime
-* `def test_diff_datetime_objs(self)` - Test that two BaseModel instances have different datetime objects
+* `def test_is_base_model(self)` - Test that the instantiation of a BaseModel works
+* `def test_created_at_instantiation(self)` - Test created_at is a pub. an instance attribute of type DateTime
+* `def test_updated_at_instantiation(self)` - Test updated_at is a pub. an instance attribute of type DateTime
+* `def test_diff_datetime_objs(self)` - Test that two BaseModel instances have different date Time objects
 
 [/test_models/test_amenity.py](/tests/test_models/test_amenity.py) - Contains the TestAmenityDocs class:
 * `def setUpClass(cls)` - Set up for the doc tests
